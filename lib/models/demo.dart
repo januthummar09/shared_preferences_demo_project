@@ -7,8 +7,16 @@ class Demo {
     this.age,
   });
   factory Demo.fromJson(Map<String, dynamic> parsedJson) {
-    return new Demo(
+    return  Demo(
       name: parsedJson['name'] ?? "",
       age: parsedJson['age'] ?? "");
+  }
+  Map<String,dynamic> toJson(){
+    return{
+      'name':name,
+      'age':age,
+    
+
+    };
   }
 }

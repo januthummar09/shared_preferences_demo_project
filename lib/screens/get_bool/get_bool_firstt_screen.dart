@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shared_preferences_demo_project/get_bool/get_bool_second_screen.dart' GetBoolFirstScreen extends StatefulWidget {
-  const GetBoolFirstScreen({Key? key}) : super(key: key);
+
+import 'get_bool_second_screen.dart';
+
+class GetBoolFirsttScreen extends StatefulWidget {
+const GetBoolFirsttScreen({ Key? key }) : super(key: key);
 
   @override
-  State<GetBoolFirstScreen> createState() => _GetBoolFirstScreenState();
+  State<GetBoolFirsttScreen> createState() => _GetBoolFirsttScreenState();
 }
 
-class _GetBoolFirstScreenState extends State<GetBoolFirstScreen> {
-  SharedPreferences? sharedPreferences;
+class _GetBoolFirsttScreenState extends State<GetBoolFirsttScreen> {
+   SharedPreferences? sharedPreferences;
   bool doneOne = false;
   bool doneTwo = true;
   @override
@@ -45,9 +48,8 @@ class _GetBoolFirstScreenState extends State<GetBoolFirstScreen> {
     sharedPreferences!.remove('boolOne');
     sharedPreferences!.remove('boolTwo');
   }
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
         title: const Text("Get Bool First Screen"),
