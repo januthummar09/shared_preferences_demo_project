@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences_demo_project/shared_prefrence/local_storege_first_screen.dart';
+import 'package:shared_preferences_demo_project/get_int/local_storage_frist_screen.dart';
+
+import 'get_bool/get_bool_first_screen.dart';
+import 'get_list/get_list_first_screen.dart';
+import 'get_string/get_string_first_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         primarySwatch: Colors.blue,
       ),
-      home: const LocalStoregeFirstScreen(),
+      home: const GetListFirstScreen(),
+      // home: const LocalStoregeFirstScreen(),
     );
   }
 }
-
