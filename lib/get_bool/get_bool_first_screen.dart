@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shared_preferences_demo_project/get_bool/get_bool_second_screen.dart';
-
-class GetBoolFirstScreen extends StatefulWidget {
+import 'package:shared_preferences_demo_project/get_bool/get_bool_second_screen.dart' GetBoolFirstScreen extends StatefulWidget {
   const GetBoolFirstScreen({Key? key}) : super(key: key);
 
   @override
