@@ -18,9 +18,7 @@ class _GetFirstModelScreenState extends State<GetFirstModelScreen> {
   getInstanceData() async {
     sharedPreferences=await SharedPreferences.getInstance();
   }
-  getModelData(){
-    
-  }
+  
   @override
   Widget build(BuildContext context){
     return Scaffold();
